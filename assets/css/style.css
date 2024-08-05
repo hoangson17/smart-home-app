@@ -86,18 +86,6 @@
 
 }
 
-@media (max-width:1200px) {
-    .section-one {
-        background-image: url("../image/BANNER-TANG-1.png");
-        width: 100%;
-        background-size: cover;
-        height: 1080px;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-
-}
 
 @media (max-width:576px) {
     .section-one {
@@ -572,15 +560,17 @@
     color: #000000;
 }
 
-
+.section-five .inner-box p{
+    font-size: 14px;
+}
 
 .section-five .inner-box .inner-image {
-    height: 110px;
-
+    height: 155px;
+    line-height: 155px;
 }
 
 .section-five .inner-box img {
-    width: 50%;
+    width: 55%;
 
 }
 
