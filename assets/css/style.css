@@ -125,6 +125,7 @@
         touch-action: manipulation;
         vertical-align: baseline;
         white-space: nowrap;
+        display: none  ;
     }
 
     .section-one .inner-content p {
@@ -140,13 +141,17 @@
     padding: 60px 0;
 }
 .section-two .inner-title{
-    font-size: 35px;
-    color: #00BF89;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #00BF89;
 }
+
 .section-two .inner-title span{
     color: var(--color-title);
+    margin-left: 7px;
 }
 
 .section-two .inner-box{
@@ -155,8 +160,16 @@
 }
 .section-two .inner-box img{
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     border-radius: 25px;
+}
+
+@media (max-width:576px) {
+    .section-two .inner-title{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 25px;
+    }
 }
 /* section-two  */
 
@@ -176,8 +189,8 @@
 }
 
 .section-three .inner-title {
-    text-align: center;
     width: 100%;
+
 }
 
 .section-three .inner-title h3 {
@@ -210,7 +223,7 @@
     flex-wrap: wrap;
     height: 130px;
     background-color: #ffffff55;
-    margin-left: 20px;
+    margin-right: 20px;
     align-items: center;
     padding-top: 15px;
     border-radius: 15px ;
@@ -238,21 +251,25 @@
         background-image: url(../image/Group113.png);
         width: 100%;
         background-size: cover;
-        height: 1200px;
+        height: 1100px;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
         padding: 100px 0;
     }
 
+    .section-three .inner-title{
+        text-align: center;
+    }
+
     .section-three .inner-title h3 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 700;
         color: var(--color-text);
     }
 
     .section-three .inner-title p {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         color: #fff;
     }
@@ -292,6 +309,11 @@
     .section-three .inner-features .inner-box img {
         width: 50%;
     }
+    .section-three .inner-features .inner-box { 
+        margin-left: 45px;
+        margin-right: 0;
+        
+    }
 }
 
 /* section-three  */
@@ -324,6 +346,29 @@
 .section-four .inner-feature {
     text-align: center;
     display: flex;
+    position: relative;
+}
+
+.section-four .inner-feature .title{
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+    left: -6px;
+}
+
+.section-four .inner-feature .title .title-box{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-title);
+
+}
+
+.section-four .inner-feature .title .desc-box{
+    font-size: 14px;
+    font-weight: 500;
+    width: 290px;
+    margin: 0 auto;
 }
 
 .section-four .inner-feature .inner-box {
@@ -341,7 +386,7 @@
 
 @media (max-width:576px) {
     .section-four .inner-title {
-        font-size: 30px;
+        font-size: 25px;
         width: 750px;
         font-weight: 700;
         margin: 0 auto 30px;
@@ -361,7 +406,24 @@
         align-items: center;
         display: block;
     }
-
+    .section-four .inner-feature .title{
+        top:5px;
+        left: 0;
+    }
+    .section-four .inner-feature .title .title-box{
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--color-title);
+    
+    }
+    
+    .section-four .inner-feature .title .desc-box{
+        font-size: 13px;
+        font-weight: 500;
+        width: 240px;
+        margin: 0 auto;
+    }
+    
 }
 
 
@@ -425,7 +487,7 @@
 
 @media (max-width:576px) {
     .section-five .inner-title .title {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 700;
         color: var(--color-title);
         margin-bottom: 0;
@@ -441,23 +503,23 @@
         margin-top: 30px;
         text-align: center;
         width: 160px;
-        margin-left: 25px;
-        background-color: #E8E7E7;
+        margin-left: 25px;   
         height: 130px;
-        border-radius: 20px;
     }
 
     .section-five .col-md-2:nth-child(2).box .inner-image img{
         width: 80px;
         height: 60px;
+        
     }
 
     .section-five .inner-box .inner-image {
         height: 100px;
+        width: 130px;
         line-height: 100px;
         text-align: center;
-
-
+        background-color: #E8E7E7;
+        border-radius: 15px;
     }
 
     .section-five .inner-box .inner-desc {
@@ -470,6 +532,7 @@
     }
     .section-five .inner-box p{
         font-size: 11px;
+        margin-top: 5px;
     }
 }
 
